@@ -11,7 +11,7 @@ Participantes:
 
 O jogador controla o "personagem" que é uma bola com uma
 boca que se abre e fecha, posicionado em um labirinto simples repleto
-de pastilhas e 4 fantasmas que o perseguiam. O objetivo era comer 
+de pastilhas e 4 fantasmas que o perseguiam. O objetivo é comer 
 todas as pastilhas sem ser alcançado pelos fantasmas, em ritmo 
 progressivo de dificuldade.
 
