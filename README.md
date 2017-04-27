@@ -9,7 +9,7 @@ Participantes:
  
 # PAC-MAN
 
-O jogador controla o "personagem" que é uma bola com uma
+O jogador controla o "personagem" que é uma bola amarela com uma
 boca que se abre e fecha, posicionado em um labirinto simples repleto
 de pastilhas e 4 fantasmas que o perseguirão. O objetivo é comer 
 todas as pastilhas sem ser alcançado pelos fantasmas, em ritmo 
