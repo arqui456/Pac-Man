@@ -3,8 +3,9 @@ Turma: 2016.2
 
 Participantes: 
 
-  - Hugo Davi Alves de Oliveira
   - Arquimedes Vinícius Pereira de França Moura
+  - Hugo Davi Alves de Oliveira
+ 
  
 # PAC-MAN
 
