@@ -31,6 +31,7 @@ para a esquerda e para a direita) usando os botões diretores disponíveis no te
   - ArraysS
   - Alocação dinâmica
   - Busca
+  - Estrutura
 
 Condicionais:
 
@@ -70,3 +71,8 @@ Array:
 >tele-transporte do jogo, que é realizado na metade do 
 >"tabuleiro" e faz o personagem passar e uma extremidade 
 >do tabuleiro a outra.
+
+
+Estrutura:
+> usaremos structs para organizar os dados do jogador,
+> como por exemplo seu nome e seu score.
