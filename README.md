@@ -82,3 +82,7 @@ Estrutura:
 
 > usaremos structs para organizar os dados do jogador,
 > como por exemplo seu nome e seu score.
+
+Recursão:
+
+>Algumas funções serão recursivas, por exemplo: uma função de ordenação.
