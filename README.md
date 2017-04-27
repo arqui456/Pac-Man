@@ -6,6 +6,19 @@ Participantes:
   - Hugo Davi Alves de Oliveira
   - Arquimedes Vinícius Pereira de França Moura
  
+# PAC-MAN
+
+O jogador controla o "personagem" que é uma bola redonda com uma
+boca que se abre e fecha, posicionado em um labirinto simples repleto
+de pastilhas e 4 fantasmas que o perseguiam. O objetivo era comer 
+todas as pastilhas sem ser alcançado pelos fantasmas, em ritmo 
+progressivo de dificuldade.
+
+### Funcionalidades do jogo:
+
+O jogador controla a direção do "personagem" (para cima,para baixo,
+para a esquerda e para a direita) usando os botões diretores disponíveis no teclado, a cada nível a dificuldade aumenta mas com o mesmo objetivo, comer todas as pastilhas sem ser alcançado pelos fantasmas. 
+
 
 # Assuntos utilizados:
 
