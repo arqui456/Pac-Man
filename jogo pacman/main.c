@@ -35,8 +35,8 @@ BITMAP* pastilhaMutante0;
 BITMAP* pastilhaMutante1;
 
 char nomes[100][4];
-int index = 0;
-int nome = 0;
+int index;
+int nome;
 int contou;
 
 int lista[10];
@@ -45,13 +45,21 @@ int anteriorpx;
 int anteriorpy;
 
 int pastilhasRestantes;
-int flag = 0;
-int aux33 = FALSE;
+int flag;
+int aux33;
 
 
 int introFlag;
-int SCORE = 0;
-int VIDAS = 3;
+int SCORE;
+int VIDAS;
+int stopTime;
+
+int contando;
+
+int aux22;
+int stopTimee;
+int contouu;
+int contandoo;
 
 enum
 {
@@ -71,7 +79,7 @@ enum{
     AUX      = 2
 };
 
-int Mapa_state = 0;
+int Mapa_state;
 
 char** mapa;
 /*
@@ -136,6 +144,27 @@ void highscore1();
 
 int main()
 {
+     nomes[100][4];
+     index = 0;
+     nome = 0;
+     contou;
+
+     lista[10];
+
+     anteriorpx;
+     anteriorpy;
+
+     pastilhasRestantes;
+     flag = 0;
+     aux33 = 0;
+
+     introFlag;
+     SCORE = 0;
+     VIDAS = 3;
+
+
+     Mapa_state = 0;
+
     init();
 
     while(!sairDoPrograma)
@@ -663,7 +692,7 @@ void setupGUI (char* title, int width, int heigh)
 	install_timer();
 	install_keyboard();
 	install_mouse();
-	set_color_depth(32);
+	set_color_depth(24);
 	set_gfx_mode(GFX_AUTODETECT_WINDOWED,width,heigh,0,0);
 	install_sound(DIGI_AUTODETECT,MIDI_AUTODETECT, NULL);
 	set_window_title(title);
@@ -710,6 +739,8 @@ void desenharMapa()
                     pastilhasRestantes--;
                     SCORE+=10;
                 }
+
+
             }
             else if(mapa[i][j] == 'O')
             {
@@ -720,14 +751,18 @@ void desenharMapa()
 
                 if(pac.py/30 == i && pac.px/30 == j)
                 {
-                    aux33 = TRUE;
+                    aux33 = 1;
                     mapa[i][j] = ' ';
                     play_sample(birl, 300, 128, 1000, FALSE);
                     SCORE+=100;
-                    comivel(TRUE);
-                    stop_sample(siren);
-                    fugir(waza);
+                    if(!contando)
+                    {
+                            comivel(1);
+                            stop_sample(siren);
+                            fugir(waza);
+                    }
                     contou = 1;
+
                 }
 
             }
@@ -737,7 +772,26 @@ void desenharMapa()
             }
         }
     }
-        tempo(milisegundos,&aux33,waza,siren,&contou);
+
+
+        if(aux33)
+        {
+            stopTime = milisegundos;
+            aux33 = 0;
+            contando = 1;
+        }
+        if((milisegundos >= stopTime + 10000) && (contou))
+        {
+            stop_sample(waza);
+            play_sample(siren,300,128,1000,TRUE);
+            perseguir();
+            contou = 0;
+            contando = 0;
+        }
+
+
+        //tempo(milisegundos,&aux33,waza,siren,&contou);
+       //printf("depois da funcao tempo: %d\n",aux33);
 
 
 
